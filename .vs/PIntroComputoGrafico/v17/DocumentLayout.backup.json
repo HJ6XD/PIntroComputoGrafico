@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:FuncionesDibujoLinea.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:FuncionesDibujoLinea.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,25 +28,29 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PIntroComputoGrafico.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\PIntroComputoGrafico.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\PIntroComputoGrafico.cpp",
               "RelativeDocumentMoniker": "PIntroComputoGrafico.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\PIntroComputoGrafico.cpp",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\PIntroComputoGrafico.cpp",
               "RelativeToolTip": "PIntroComputoGrafico.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-08T23:31:32.952Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FuncionesDibujoLinea.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.cpp",
               "RelativeDocumentMoniker": "FuncionesDibujoLinea.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.cpp",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.cpp",
               "RelativeToolTip": "FuncionesDibujoLinea.cpp",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-11T17:13:20.582Z",
               "EditorCaption": ""
@@ -55,14 +59,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FuncionesDibujoLinea.h",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.h",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.h",
               "RelativeDocumentMoniker": "FuncionesDibujoLinea.h",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego Jim\u00E9nez (el chido)\\PIntroComputoGrafico-main\\FuncionesDibujoLinea.h",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Escritorio\\Introduccion a Computo Grafico\\PIntroComputoGrafico\\FuncionesDibujoLinea.h",
               "RelativeToolTip": "FuncionesDibujoLinea.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-11T17:13:12.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T17:13:12.468Z"
             }
           ]
         }

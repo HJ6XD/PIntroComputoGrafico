@@ -18,7 +18,7 @@ int main()
         BeginDrawing();
 
         ClearBackground(DARKGRAY);
-        FDL.DibujarCirculoDDA(10);
+        FDL.DibujarLineaCada10(100);
 
         EndDrawing();
     }
