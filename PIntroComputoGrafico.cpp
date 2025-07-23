@@ -9,7 +9,7 @@ int main()
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "PIXEL Tierno");
+    InitWindow(screenWidth, screenHeight, "Proximo pinball");
 
     SetTargetFPS(60);
     // Main game loop
@@ -18,7 +18,8 @@ int main()
         BeginDrawing();
 
         ClearBackground(DARKGRAY);
-        FDL.DibujarLineaCada10(100);
+        FDL.DibujarLineaCada10Bresenham(250,225,100);  
+        FDL.DibujarLineaCada10DDA(550, 225, 100);
 
         EndDrawing();
     }
