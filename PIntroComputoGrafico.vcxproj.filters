@@ -13,17 +13,50 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e8038213-94ac-42be-935c-7c1a355260b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4f744209-33e3-420c-a0ff-ab021406163a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{ac3bde57-b76c-4b46-871c-480a90d5d98d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PIntroComputoGrafico.cpp">
+    <ClCompile Include="src\FuncionesDibujoLinea.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PIntroComputoGrafico.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Figuras.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="FuncionesDibujoLinea.cpp">
+    <ClCompile Include="src\Circulo.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cuadrado.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Triangulo.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FuncionesDibujoLinea.h">
+    <ClInclude Include="include\FuncionesDibujoLinea.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Figuras.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Circulo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cuadrado.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Triangulo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

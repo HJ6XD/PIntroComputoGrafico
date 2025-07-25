@@ -127,11 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FuncionesDibujoLinea.cpp" />
-    <ClCompile Include="PIntroComputoGrafico.cpp" />
+    <ClCompile Include="src\Circulo.cpp" />
+    <ClCompile Include="src\Cuadrado.cpp" />
+    <ClCompile Include="src\Figuras.cpp" />
+    <ClCompile Include="src\FuncionesDibujoLinea.cpp" />
+    <ClCompile Include="src\PIntroComputoGrafico.cpp" />
+    <ClCompile Include="src\Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FuncionesDibujoLinea.h" />
+    <ClInclude Include="include\Circulo.h" />
+    <ClInclude Include="include\Cuadrado.h" />
+    <ClInclude Include="include\Figuras.h" />
+    <ClInclude Include="include\FuncionesDibujoLinea.h" />
+    <ClInclude Include="include\Triangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
