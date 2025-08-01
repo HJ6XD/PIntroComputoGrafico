@@ -18,6 +18,9 @@ void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
     float yinc = (float)dy / (float)steps;
     for (int i = 0; i < steps; i++) {
         DrawPixel(p1.x + (xinc * i), p1.y + (yinc * i), BLUE);
-        puntos.push_back({ p1.x + (xinc * i), p1.y + (yinc * i) });
+        Vector2 p = { p1.x + (xinc * i), p1.y + (yinc * i) };
+        p.x = std::floor(p.x);
+        p.y = std::floor(p.y);
+        puntos.push_back(p);
     }
 }

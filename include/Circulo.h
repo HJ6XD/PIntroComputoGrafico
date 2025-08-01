@@ -13,5 +13,6 @@ public:
     }
 
     void DrawFigure() override;
+    void RasterizeFigure() override;
 };
 

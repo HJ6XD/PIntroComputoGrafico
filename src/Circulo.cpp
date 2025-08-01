@@ -16,3 +16,17 @@ void Circulo::DrawFigure()
         curDeg += 10;
     }
 }
+
+void Circulo::RasterizeFigure()
+{
+    for (float cy = center.y; cy < center.y + radius; cy++) {
+        for (int cx = 0; cx < radius; cx++) {
+            DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });
+        }
+    }
+    for (float cy = center.y; cy > center.y - radius; cy--) {
+        for (int cx = 0; cx < radius; cx++) {
+            DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });
+        }
+    }
+}

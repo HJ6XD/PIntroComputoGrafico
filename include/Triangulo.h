@@ -10,5 +10,7 @@ public:
 
     Triangulo(Vector2 v1, Vector2 v2, Vector2 v3);
     void DrawFigure() override;
+    void RasterizeFigure() override;
+
 };
 

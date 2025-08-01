@@ -16,6 +16,13 @@ int main()
 
     SetTargetFPS(60);
     // Main game loop
+    Cuadrado* cuadrado = new Cuadrado({ 100,100 }, 100, 100);
+    cuadrado->RasterizeFigure();
+    Triangulo* triangulo = new Triangulo({ 50,200 }, { 150,100 }, { 250,200});
+    triangulo->DrawFigure();
+    triangulo->RasterizeFigure();
+    Circulo* circulo = new Circulo({ 250,250 }, 75);
+    circulo->RasterizeFigure();
 
     while (!WindowShouldClose())
     {
@@ -38,6 +45,8 @@ int main()
         ////Dibujar triangulos
         //FDL.DibujarTrianguloDDA(440,160,500,40,560,160);
         //FDL.DibujarTrianguloBresenham(440, 360, 500, 240, 560, 360);
+        
+        circulo->Draw();
         EndDrawing();
     }
     CloseWindow();

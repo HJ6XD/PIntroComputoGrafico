@@ -12,3 +12,14 @@ void Cuadrado::DrawFigure()
     DrawLineDDA({ start.x + width, start.y }, { start.x + width, start.y + height});
     DrawLineDDA({ start.x, start.y + height}, { start.x + width, start.y + height });
 }
+
+void Cuadrado::RasterizeFigure()
+{
+    float xmin = start.x;
+    float xmax = start.x + width;
+    float ymin = start.y;
+    float ymax = start.x + height;
+    for (float cy = ymin; cy < ymax; cy++) {
+        DrawLineDDA({ xmin, cy }, { xmax, cy });
+    }
+}
