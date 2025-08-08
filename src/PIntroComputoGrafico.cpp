@@ -46,7 +46,7 @@ int main()
         //FDL.DibujarTrianguloDDA(440,160,500,40,560,160);
         //FDL.DibujarTrianguloBresenham(440, 360, 500, 240, 560, 360);
         
-        circulo->Draw();
+        cuadrado->Draw();
         EndDrawing();
     }
     CloseWindow();

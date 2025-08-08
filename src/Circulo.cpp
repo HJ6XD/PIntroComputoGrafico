@@ -7,7 +7,7 @@ void Circulo::DrawFigure()
     Vector2 p2;
     for (int i = 0; i < 37; i++) {
         float cd = cos((curDeg * PI) / 180);
-        float sd = sin((curDeg * PI) / 180);
+        float sd = sin((curDeg * PI) / 180); 
         p2.x = center.x + (cd * radius);
         p2.y = center.y + (sd * radius);
         DrawLineDDA(p1, p2);
@@ -19,14 +19,14 @@ void Circulo::DrawFigure()
 
 void Circulo::RasterizeFigure()
 {
+    float cx = center.x;
     for (float cy = center.y; cy < center.y + radius; cy++) {
-        for (int cx = 0; cx < radius; cx++) {
-            DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });
-        }
+        cx++;
+        DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });
     }
+    cx = center.x;
     for (float cy = center.y; cy > center.y - radius; cy--) {
-        for (int cx = 0; cx < radius; cx++) {
-            DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });
-        }
+        cx++;
+        DrawLineDDA({ center.x - radius + cx, cy }, { center.x + radius - cx, cy });        
     }
 }

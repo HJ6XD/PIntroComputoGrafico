@@ -20,6 +20,6 @@ void Cuadrado::RasterizeFigure()
     float ymin = start.y;
     float ymax = start.x + height;
     for (float cy = ymin; cy < ymax; cy++) {
-        DrawLineDDA({ xmin, cy }, { xmax, cy });
+        DrawLineBresenham({ xmin, cy }, { xmax, cy });
     }
 }

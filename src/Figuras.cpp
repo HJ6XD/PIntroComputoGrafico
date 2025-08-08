@@ -24,3 +24,48 @@ void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
         puntos.push_back(p);
     }
 }
+
+void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
+{
+    int dx = p2.x - p1.x;
+    int dy = p2.y - p1.y;
+
+    int incyi;
+    if (dy >= 0) { incyi = 1; }
+    else { dy *= -1; incyi = -1; }
+    int incxi;
+    if (dx >= 0) { incxi = 1; }
+    else { dx *= -1; incxi = -1; }
+
+    int incyr, incxr;
+    if (dx >= dy) {
+        incyr = 0;
+        incxr = incxi;
+    }
+    else {
+        incyr = incyi;
+        incxr = 0;
+        int k = dx; dx = dy; dy = k;
+    }
+
+    int X = p1.x; int Y = p1.y;
+    int avr = 2 * dy;
+    int av = avr - dx;
+    int avi = av - dx;
+
+    while (X != p2.x || Y != p2.y) {
+        DrawPixel(X, Y, GOLD);
+        Vector2 p = { std::floor(X), std::floor(Y) };
+        puntos.push_back(p);
+        if (av >= 0) {
+            X += incxi;
+            Y += incyi;
+            av += avi;
+        }
+        else {
+            X += incxr;
+            Y += incyr;
+            av += avr;
+        }
+    }
+}

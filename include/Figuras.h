@@ -15,6 +15,7 @@ public:
 	void Draw();
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	
+	void DrawLineBresenham(Vector2 p1, Vector2 p2);
 
 };
 
