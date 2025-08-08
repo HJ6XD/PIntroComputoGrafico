@@ -4,9 +4,9 @@ C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGr
 C:\Users\Asus\OneDrive\Escritorio\Introduccion a Computo Grafico\PIntroComputoGrafico\x64\Debug\raylib.dll
 C:\Users\Asus\OneDrive\Escritorio\Introduccion a Computo Grafico\PIntroComputoGrafico\x64\Debug\glfw3.dll
 C:\Users\Asus\OneDrive\Escritorio\Introduccion a Computo Grafico\PIntroComputoGrafico\PIntroCo.df58189e\x64\Debug\PIntroCo.C5998EC9.Up2Date
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\raylib.dll
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\glfw3.dll
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\PIntroCo.df58189e\x64\Debug\PIntroCo.C5998EC9.Up2Date
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\x64\Debug\raylib.dll
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\x64\Debug\glfw3.dll
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\PIntroCo.df58189e\x64\Debug\PIntroCo.C5998EC9.Up2Date
+C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\raylib.dll
+C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\glfw3.dll
+C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\PIntroCo.df58189e\x64\Debug\PIntroCo.C5998EC9.Up2Date

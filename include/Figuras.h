@@ -10,8 +10,11 @@ class Figuras
 public:
 	std::vector<Vector2> puntos;
 	std::vector<Vector2>::iterator it;
-	virtual void DrawFigure() {}
-	virtual void RasterizeFigure() {}
+	Color color;
+	virtual void DrawFigureD() {}
+	virtual void RasterizeFigureD() {}
+	virtual void DrawFigureB() {}
+	virtual void RasterizeFigureB() {}
 	void Draw();
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	

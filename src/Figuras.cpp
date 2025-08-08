@@ -3,14 +3,12 @@
 void Figuras::Draw()
 {
     for (int i = 0; i < puntos.size(); i++) {
-        DrawPixel(puntos.at(i).x, puntos.at(i).y, RAYWHITE);
+        DrawPixel(puntos.at(i).x, puntos.at(i).y, color);
     }
 }
 
 void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
 {
-    /*puntos.push_back(p1);
-    puntos.push_back(p2);*/ 
     int dx = p2.x - p1.x;
     int dy = p2.y - p1.y;
     int steps = abs(dx) > abs(dy) ? abs(dx) : abs(dy);
@@ -27,6 +25,11 @@ void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
 
 void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
 {
+    p1.x = std::floor(p1.x);
+    p1.y = std::floor(p1.y);
+    p2.x = std::floor(p2.x);
+    p2.y = std::floor(p2.y);
+
     int dx = p2.x - p1.x;
     int dy = p2.y - p1.y;
 
@@ -55,7 +58,8 @@ void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
 
     while (X != p2.x || Y != p2.y) {
         DrawPixel(X, Y, GOLD);
-        Vector2 p = { std::floor(X), std::floor(Y) };
+        float tx = X, ty = Y;
+        Vector2 p = { std::floor(tx), std::floor(ty) };
         puntos.push_back(p);
         if (av >= 0) {
             X += incxi;

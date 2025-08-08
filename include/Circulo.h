@@ -8,11 +8,11 @@ public:
     Vector2 center;
     int radius;
 
-    Circulo(Vector2 c, int r) : center(c), radius(r) {
-        puntos = std::vector<Vector2>();
-    }
+    Circulo(Vector2 c, int r, Color co);
 
-    void DrawFigure() override;
-    void RasterizeFigure() override;
+    void DrawFigureD() override;
+    void RasterizeFigureD() override;
+    void DrawFigureB() override;
+    void RasterizeFigureB() override;
 };
 
