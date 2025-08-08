@@ -16,6 +16,9 @@ public:
 	virtual void DrawFigureB() {}
 	virtual void RasterizeFigureB() {}
 	void Draw();
+
+	void TranslateFigure(int x, int y);
+
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	
 	void DrawLineBresenham(Vector2 p1, Vector2 p2);

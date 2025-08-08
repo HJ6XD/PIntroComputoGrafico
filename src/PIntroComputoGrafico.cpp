@@ -34,13 +34,8 @@ int main()
     trianguloB->DrawFigureB();
     trianguloB->RasterizeFigureB();
 
-
     Circulo* circuloB = new Circulo({ 500,350 }, 50, YELLOW);
-    std::cout << "comienza a dibujar" << std::endl;
-
     circuloB->DrawFigureB();
-    std::cout << "termina de dibujar" << std::endl;
-
     circuloB->RasterizeFigureB();
 
     std::vector<Figuras*>* figuras = new std::vector<Figuras*>();
@@ -57,7 +52,7 @@ int main()
         ClearBackground(DARKGRAY);
 
         FDL.DibujarCirculoBresenham(500, 350, 50);
-
+        cuadradoB->TranslateFigure(1,-1);
 
         for (int i = 0; i < figuras->size(); i++) {
             figuras->at(i)->Draw();
