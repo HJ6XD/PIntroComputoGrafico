@@ -94,3 +94,21 @@ void Circulo::RasterizeFigureB()
         DrawLineBresenham({ center.x - cx, cy }, { center.x + cx, cy });
     }
 }
+
+void Circulo::RotateFigure(int deg)
+{
+    float coseno = cos((deg * PI) / 180);
+    float seno = sin((deg * PI) / 180);
+
+    for (int i = 0; i < puntos.size(); i++) {
+        puntos[i].x -= center.x;
+        puntos[i].y -= center.y;
+        int tx = puntos[i].x;
+        int ty = puntos[i].y;
+        puntos[i].x = ((tx * coseno) - (ty * seno));
+        puntos[i].y = ((tx * seno) + (ty * coseno));
+
+        puntos[i].x += center.x;
+        puntos[i].y += center.y;
+    }
+}

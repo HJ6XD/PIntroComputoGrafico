@@ -5,7 +5,7 @@ class Cuadrado :
     public Figuras
 {
 public:
-    Vector2 start;
+    Vector2 start, center;
     int width, height;
 
     Cuadrado(Vector2 str, int w, int h, Color c);
@@ -13,6 +13,6 @@ public:
     void RasterizeFigureD() override;
     void DrawFigureB() override;
     void RasterizeFigureB() override;
-
+    void RotateFigure(int deg) override;
 };
 

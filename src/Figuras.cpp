@@ -9,11 +9,13 @@ void Figuras::Draw()
 
 void Figuras::TranslateFigure(int x, int y)
 {
+
     for (int i = 0; i < puntos.size(); i++) {
         puntos.at(i).x += x;
         puntos.at(i).y += y;
     }
 }
+
 
 void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
 {

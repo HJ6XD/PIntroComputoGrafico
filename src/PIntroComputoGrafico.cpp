@@ -17,7 +17,8 @@ int main()
 
     SetTargetFPS(60);
     // Main game loop
-    Cuadrado* cuadradoD = new Cuadrado({ 250,50 }, 100, 100, DARKPURPLE);
+    Cuadrado* cuadradoD = new Cuadrado({ 250,50 }, 100, 100, GREEN);
+    cuadradoD->DrawFigureD();
     cuadradoD->RasterizeFigureD();
 
     Triangulo* trianguloD = new Triangulo({ 50,150 }, { 100,50 }, { 150,150}, BLUE);
@@ -30,6 +31,7 @@ int main()
 
     Cuadrado* cuadradoB = new Cuadrado({ 250,300 }, 100, 100, ORANGE);
     cuadradoB->RasterizeFigureB();
+
     Triangulo* trianguloB = new Triangulo({ 50,400 }, { 100,300 }, { 150,400 }, RED);
     trianguloB->DrawFigureB();
     trianguloB->RasterizeFigureB();
@@ -52,7 +54,18 @@ int main()
         ClearBackground(DARKGRAY);
 
         FDL.DibujarCirculoBresenham(500, 350, 50);
-        cuadradoB->TranslateFigure(1,-1);
+        if (IsKeyPressed(KEY_Q))
+            trianguloD->TranslateFigure(10, 10);
+        if (IsKeyPressed(KEY_W))
+            cuadradoD->TranslateFigure(10,10);
+        if (IsKeyPressed(KEY_E))
+            circuloD->TranslateFigure(10, 10);
+        if (IsKeyPressed(KEY_A))
+            trianguloB->TranslateFigure(10, 10);
+        if (IsKeyPressed(KEY_S))
+            cuadradoB->TranslateFigure(10, 10);
+        if (IsKeyPressed(KEY_D))
+            circuloB->TranslateFigure(10, 10);
 
         for (int i = 0; i < figuras->size(); i++) {
             figuras->at(i)->Draw();

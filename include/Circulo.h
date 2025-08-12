@@ -14,5 +14,7 @@ public:
     void RasterizeFigureD() override;
     void DrawFigureB() override;
     void RasterizeFigureB() override;
+    void RotateFigure(int deg) override;
+
 };
 

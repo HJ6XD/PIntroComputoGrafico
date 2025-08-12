@@ -4,6 +4,7 @@ Cuadrado::Cuadrado(Vector2 str, int w, int h, Color c) : start(str), width(w), h
 {
     puntos = std::vector<Vector2>();
     color = c;
+    center = { start.x + width / 2, start.y + height / 2 };
 }
 
 void Cuadrado::DrawFigureD()
@@ -41,5 +42,23 @@ void Cuadrado::RasterizeFigureB()
     float ymax = start.y + height;
     for (float cy = ymin; cy <= ymax; cy++) {
         DrawLineBresenham({ xmin, cy }, { xmax, cy });
+    }
+}
+
+void Cuadrado::RotateFigure(int deg)
+{
+    float coseno = cos((deg * PI) / 180);
+    float seno = sin((deg * PI) / 180);
+
+    for (int i = 0; i < puntos.size(); i++) {
+        puntos[i].x -= center.x;
+        puntos[i].y -= center.y;
+        int tx = puntos[i].x;
+        int ty = puntos[i].y;
+        puntos[i].x = ((tx * coseno) - (ty * seno));
+        puntos[i].y = ((tx * seno) + (ty * coseno));
+
+        puntos[i].x += center.x;
+        puntos[i].y += center.y;
     }
 }

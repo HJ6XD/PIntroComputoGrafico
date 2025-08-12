@@ -18,6 +18,7 @@ public:
 	void Draw();
 
 	void TranslateFigure(int x, int y);
+	virtual void RotateFigure(int deg){}
 
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	
