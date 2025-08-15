@@ -11,18 +11,20 @@ public:
 	std::vector<Vector2> puntos;
 	std::vector<Vector2>::iterator it;
 	Color color;
-	virtual void DrawFigureD() {}
-	virtual void RasterizeFigureD() {}
-	virtual void DrawFigureB() {}
-	virtual void RasterizeFigureB() {}
-	void Draw();
+	Vector2 center;
+	bool isDDA, isBresenham;
 
+	virtual void DrawFigure() {}
+	virtual void RasterizeFigure() {}
+	void Draw();
+	virtual void Update() {}
+	void InitializeFigure();
 	void TranslateFigure(int x, int y);
-	virtual void RotateFigure(int deg){}
+	void RotateFigure(int deg);
 
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	
 	void DrawLineBresenham(Vector2 p1, Vector2 p2);
-
+	bool CheckIfAlredyOnList(Vector2 newpoint);
 };
 

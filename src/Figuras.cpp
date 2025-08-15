@@ -7,6 +7,12 @@ void Figuras::Draw()
     }
 }
 
+void Figuras::InitializeFigure()
+{
+    DrawFigure();
+    RasterizeFigure();
+}
+
 void Figuras::TranslateFigure(int x, int y)
 {
 
@@ -16,6 +22,22 @@ void Figuras::TranslateFigure(int x, int y)
     }
 }
 
+void Figuras::RotateFigure(int deg) {
+    float coseno = cos((deg * PI) / 180);
+    float seno = sin((deg * PI) / 180);
+
+    for (int i = 0; i < puntos.size(); i++) {
+        puntos[i].x -= center.x;
+        puntos[i].y -= center.y;
+        int tx = puntos[i].x;
+        int ty = puntos[i].y;
+        puntos[i].x = ((tx * coseno) - (ty * seno));
+        puntos[i].y = ((tx * seno) + (ty * coseno));
+
+        puntos[i].x += center.x;
+        puntos[i].y += center.y;
+    }
+}
 
 void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
 {
@@ -25,11 +47,11 @@ void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
     float xinc = (float)dx / (float)steps;
     float yinc = (float)dy / (float)steps;
     for (int i = 0; i < steps; i++) {
-        DrawPixel(p1.x + (xinc * i), p1.y + (yinc * i), BLUE);
         Vector2 p = { p1.x + (xinc * i), p1.y + (yinc * i) };
         p.x = std::floor(p.x);
         p.y = std::floor(p.y);
-        puntos.push_back(p);
+        if (CheckIfAlredyOnList(p))
+            puntos.push_back(p);
     }
 }
 
@@ -67,10 +89,12 @@ void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
     int avi = av - dx;
 
     while (X != p2.x || Y != p2.y) {
-        DrawPixel(X, Y, GOLD);
         float tx = X, ty = Y;
         Vector2 p = { std::floor(tx), std::floor(ty) };
-        puntos.push_back(p);
+
+        if(CheckIfAlredyOnList(p))
+            puntos.push_back(p);
+
         if (av >= 0) {
             X += incxi;
             Y += incyi;
@@ -82,4 +106,15 @@ void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
             av += avr;
         }
     }
+}
+
+bool Figuras::CheckIfAlredyOnList(Vector2 newpoint)
+{
+    for (it = puntos.begin(); it != puntos.end(); ++it) {
+        Vector2 temp = *it;
+        if (temp.x != newpoint.x || temp.y != newpoint.y) continue;
+
+        else return false;
+    }
+    return true;
 }

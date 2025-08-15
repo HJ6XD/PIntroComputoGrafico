@@ -1,11 +1,14 @@
 #include "../include/Circulo.h"
 
-Circulo::Circulo(Vector2 c, int r, Color co) : center(c), radius(r) {
+Circulo::Circulo(Vector2 c, int r, bool isD, Color co) : radius(r) {
     puntos = std::vector<Vector2>();
     color = co;
+    center = c;
+    isDDA = isD;
+    isBresenham = !isD;
 }
 
-void Circulo::DrawFigureD()
+void Circulo::DrawFigure()
 {
     int curDeg = 0;
     Vector2 p1 = { center.x + radius, center.y };
@@ -15,8 +18,10 @@ void Circulo::DrawFigureD()
         float sd = sin((curDeg * PI) / 180); 
         p2.x = center.x + (cd * radius);
         p2.y = center.y + (sd * radius);
-
-        DrawLineDDA(p1, p2);
+        if (isDDA)
+            DrawLineDDA(p1, p2);
+        else if (isBresenham)
+            DrawLineBresenham(p1, p2);
 
         p1.x = p2.x;
         p1.y = p2.y;
@@ -24,7 +29,7 @@ void Circulo::DrawFigureD()
     }
 }
 
-void Circulo::RasterizeFigureD()
+void Circulo::RasterizeFigure()
 {
     float cx = radius;
     for (float cy = center.y; cy < center.y + radius; cy++) {
@@ -35,7 +40,11 @@ void Circulo::RasterizeFigureD()
             cx -= (cx - (temp.x - center.x));
             break;
         }
-        DrawLineDDA({ center.x - cx, cy } , { center.x + cx, cy });
+        if(isDDA)
+            DrawLineDDA({ center.x - cx, cy } , { center.x + cx, cy });
+        else if(isBresenham)
+            DrawLineBresenham({ center.x - cx, cy }, { center.x + cx, cy });
+
     }
     cx = radius;
     for (float cy = center.y; cy > center.y - radius; cy--) {
@@ -46,69 +55,10 @@ void Circulo::RasterizeFigureD()
             cx -= (cx - (temp.x - center.x));
             break;
         }
-        DrawLineDDA({ center.x - cx, cy }, { center.x + cx, cy });
+        if (isDDA)
+            DrawLineDDA({ center.x - cx, cy }, { center.x + cx, cy });
+        else if (isBresenham)
+            DrawLineBresenham({ center.x - cx, cy }, { center.x + cx, cy });
     }
 }
 
-void Circulo::DrawFigureB()
-{
-    int curDeg = 0;
-    Vector2 p1 = { center.x + radius, center.y };
-    Vector2 p2;
-    for (int i = 0; i < 37; i++) {
-        float cd = cos((curDeg * PI) / 180);
-        float sd = sin((curDeg * PI) / 180);
-        p2.x = center.x + (cd * radius);
-        p2.y = center.y + (sd * radius);
-
-        DrawLineBresenham(p1, p2);
-
-        p1.x = p2.x;
-        p1.y = p2.y;
-        curDeg += 10;
-    }
-}
-
-void Circulo::RasterizeFigureB()
-{
-    float cx = radius;
-    for (float cy = center.y; cy < center.y + radius; cy++) {
-        for (it = puntos.begin(); it != puntos.end(); ++it) {
-            Vector2 temp = *it;
-            if (temp.y != cy) continue;
-
-            cx -= (cx - (temp.x - center.x));
-            break;
-        }
-        DrawLineBresenham({ center.x - cx, cy }, { center.x + cx, cy });
-    }
-    cx = radius;
-    for (float cy = center.y; cy > center.y - radius; cy--) {
-        for (it = puntos.begin(); it != puntos.end(); ++it) {
-            Vector2 temp = *it;
-            if (temp.y != cy) continue;
-
-            cx -= (cx - (temp.x - center.x));
-            break;
-        }
-        DrawLineBresenham({ center.x - cx, cy }, { center.x + cx, cy });
-    }
-}
-
-void Circulo::RotateFigure(int deg)
-{
-    float coseno = cos((deg * PI) / 180);
-    float seno = sin((deg * PI) / 180);
-
-    for (int i = 0; i < puntos.size(); i++) {
-        puntos[i].x -= center.x;
-        puntos[i].y -= center.y;
-        int tx = puntos[i].x;
-        int ty = puntos[i].y;
-        puntos[i].x = ((tx * coseno) - (ty * seno));
-        puntos[i].y = ((tx * seno) + (ty * coseno));
-
-        puntos[i].x += center.x;
-        puntos[i].y += center.y;
-    }
-}

@@ -17,28 +17,23 @@ int main()
 
     SetTargetFPS(60);
     // Main game loop
-    Cuadrado* cuadradoD = new Cuadrado({ 250,50 }, 100, 100, GREEN);
-    cuadradoD->DrawFigureD();
-    cuadradoD->RasterizeFigureD();
+    Cuadrado* cuadradoD = new Cuadrado({ 250,50 }, 100, 100, true, DARKPURPLE);
+    cuadradoD->InitializeFigure();
 
-    Triangulo* trianguloD = new Triangulo({ 50,150 }, { 100,50 }, { 150,150}, BLUE);
-    trianguloD->DrawFigureD();
-    trianguloD->RasterizeFigureD();
+    Triangulo* trianguloD = new Triangulo({ 100,100}, 100, 100, true, BLUE);
+    trianguloD->InitializeFigure();
 
-    Circulo* circuloD = new Circulo({ 500,100 }, 50, DARKBLUE);
-    circuloD->DrawFigureD();
-    circuloD->RasterizeFigureD();
+    Circulo* circuloD = new Circulo({ 500,100 }, 50, true, DARKBLUE);
+    circuloD->InitializeFigure();
 
-    Cuadrado* cuadradoB = new Cuadrado({ 250,300 }, 100, 100, ORANGE);
-    cuadradoB->RasterizeFigureB();
+    Cuadrado* cuadradoB = new Cuadrado({ 250,300 }, 100, 100, false, ORANGE);
+    cuadradoB->InitializeFigure();
 
-    Triangulo* trianguloB = new Triangulo({ 50,400 }, { 100,300 }, { 150,400 }, RED);
-    trianguloB->DrawFigureB();
-    trianguloB->RasterizeFigureB();
+    Triangulo* trianguloB = new Triangulo({ 100,350 }, 100, 100, false, RED);
+    trianguloB->InitializeFigure();
 
-    Circulo* circuloB = new Circulo({ 500,350 }, 50, YELLOW);
-    circuloB->DrawFigureB();
-    circuloB->RasterizeFigureB();
+    Circulo* circuloB = new Circulo({ 500,350 }, 50, false, YELLOW);
+    circuloB->InitializeFigure();
 
     std::vector<Figuras*>* figuras = new std::vector<Figuras*>();
     figuras->push_back(cuadradoD);
@@ -55,17 +50,17 @@ int main()
 
         FDL.DibujarCirculoBresenham(500, 350, 50);
         if (IsKeyPressed(KEY_Q))
-            trianguloD->TranslateFigure(10, 10);
+            trianguloD->RotateFigure(20);
         if (IsKeyPressed(KEY_W))
-            cuadradoD->TranslateFigure(10,10);
+            cuadradoD->RotateFigure(20);
         if (IsKeyPressed(KEY_E))
-            circuloD->TranslateFigure(10, 10);
+            circuloD->RotateFigure(20);
         if (IsKeyPressed(KEY_A))
-            trianguloB->TranslateFigure(10, 10);
+            trianguloB->RotateFigure(20);
         if (IsKeyPressed(KEY_S))
-            cuadradoB->TranslateFigure(10, 10);
+            cuadradoB->RotateFigure(20);
         if (IsKeyPressed(KEY_D))
-            circuloB->TranslateFigure(10, 10);
+            circuloB->RotateFigure(20);
 
         for (int i = 0; i < figuras->size(); i++) {
             figuras->at(i)->Draw();

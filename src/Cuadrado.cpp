@@ -1,64 +1,41 @@
 #include "../include/Cuadrado.h"
 
-Cuadrado::Cuadrado(Vector2 str, int w, int h, Color c) : start(str), width(w), height(h)
+Cuadrado::Cuadrado(Vector2 str, int w, int h, bool isD, Color c) : start(str), width(w), height(h)
 {
     puntos = std::vector<Vector2>();
     color = c;
     center = { start.x + width / 2, start.y + height / 2 };
+    isDDA = isD;
+    isBresenham = !isD;
 }
 
-void Cuadrado::DrawFigureD()
+void Cuadrado::DrawFigure()
 {
-    DrawLineDDA(start, {start. x, start.y + height });
-    DrawLineDDA(start, { start.x + width, start.y });
-    DrawLineDDA({ start.x + width, start.y }, { start.x + width, start.y + height});
-    DrawLineDDA({ start.x, start.y + height}, { start.x + width, start.y + height });
+    if(isDDA){
+        DrawLineDDA(start, { start.x, start.y + height });
+        DrawLineDDA(start, { start.x + width, start.y });
+        DrawLineDDA({ start.x + width, start.y }, { start.x + width, start.y + height });
+        DrawLineDDA({ start.x, start.y + height }, { start.x + width, start.y + height });
+    }
+    else if(isBresenham){
+        DrawLineBresenham(start, { start.x, start.y + height });
+        DrawLineBresenham(start, { start.x + width, start.y });
+        DrawLineBresenham({ start.x + width, start.y }, { start.x + width, start.y + height });
+        DrawLineBresenham({ start.x, start.y + height }, { start.x + width, start.y + height });
+    }
 }
 
-void Cuadrado::RasterizeFigureD()
+void Cuadrado::RasterizeFigure()
 {
     float xmin = start.x;
     float xmax = start.x + width;
     float ymin = start.y;
     float ymax = start.y + height;
     for (float cy = ymin; cy <= ymax; cy++) {
-        DrawLineDDA({ xmin, cy }, { xmax, cy });
-    }
-}
+        if(isDDA)
+            DrawLineDDA({ xmin, cy }, { xmax, cy });
 
-void Cuadrado::DrawFigureB()
-{
-    DrawLineBresenham(start, { start.x, start.y + height });
-    DrawLineBresenham(start, { start.x + width, start.y });
-    DrawLineBresenham({ start.x + width, start.y }, { start.x + width, start.y + height });
-    DrawLineBresenham({ start.x, start.y + height }, { start.x + width, start.y + height });
-}
-
-void Cuadrado::RasterizeFigureB()
-{
-    float xmin = start.x;
-    float xmax = start.x + width;
-    float ymin = start.y;
-    float ymax = start.y + height;
-    for (float cy = ymin; cy <= ymax; cy++) {
-        DrawLineBresenham({ xmin, cy }, { xmax, cy });
-    }
-}
-
-void Cuadrado::RotateFigure(int deg)
-{
-    float coseno = cos((deg * PI) / 180);
-    float seno = sin((deg * PI) / 180);
-
-    for (int i = 0; i < puntos.size(); i++) {
-        puntos[i].x -= center.x;
-        puntos[i].y -= center.y;
-        int tx = puntos[i].x;
-        int ty = puntos[i].y;
-        puntos[i].x = ((tx * coseno) - (ty * seno));
-        puntos[i].y = ((tx * seno) + (ty * coseno));
-
-        puntos[i].x += center.x;
-        puntos[i].y += center.y;
+        else if(isBresenham)
+            DrawLineBresenham({ xmin, cy }, { xmax, cy });
     }
 }

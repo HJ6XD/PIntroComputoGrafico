@@ -5,16 +5,12 @@ class Circulo :
     public Figuras
 {
 public:
-    Vector2 center;
     int radius;
 
-    Circulo(Vector2 c, int r, Color co);
+    Circulo(Vector2 c, int r, bool isD, Color co);
 
-    void DrawFigureD() override;
-    void RasterizeFigureD() override;
-    void DrawFigureB() override;
-    void RasterizeFigureB() override;
-    void RotateFigure(int deg) override;
+    void DrawFigure() override;
+    void RasterizeFigure() override;
 
 };
 
