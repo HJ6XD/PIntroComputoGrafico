@@ -1,4 +1,8 @@
 ﻿  PIntroComputoGrafico.cpp
+  Pelota.cpp
+C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pelota.cpp(46,48): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pelota.cpp(46,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
   PIntroComputoGrafico.vcxproj -> C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

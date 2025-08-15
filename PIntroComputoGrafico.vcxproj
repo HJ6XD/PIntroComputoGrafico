@@ -131,6 +131,8 @@
     <ClCompile Include="src\Cuadrado.cpp" />
     <ClCompile Include="src\Figuras.cpp" />
     <ClCompile Include="src\FuncionesDibujoLinea.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\Pelota.cpp" />
     <ClCompile Include="src\PIntroComputoGrafico.cpp" />
     <ClCompile Include="src\Triangulo.cpp" />
   </ItemGroup>
@@ -139,6 +141,8 @@
     <ClInclude Include="include\Cuadrado.h" />
     <ClInclude Include="include\Figuras.h" />
     <ClInclude Include="include\FuncionesDibujoLinea.h" />
+    <ClInclude Include="include\GameObject.h" />
+    <ClInclude Include="include\Pelota.h" />
     <ClInclude Include="include\Triangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

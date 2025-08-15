@@ -15,7 +15,7 @@ void Figuras::InitializeFigure()
 
 void Figuras::TranslateFigure(int x, int y)
 {
-
+    center.x += x; center.y += y;
     for (int i = 0; i < puntos.size(); i++) {
         puntos.at(i).x += x;
         puntos.at(i).y += y;

@@ -17,7 +17,6 @@ public:
 	virtual void DrawFigure() {}
 	virtual void RasterizeFigure() {}
 	void Draw();
-	virtual void Update() {}
 	void InitializeFigure();
 	void TranslateFigure(int x, int y);
 	void RotateFigure(int deg);
