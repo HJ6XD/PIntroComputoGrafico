@@ -21,6 +21,7 @@ public:
 	void InitializeFigure();
 	void TranslateFigure(int x, int y);
 	void RotateFigure(int deg);
+	void ScaleFigure(float W, float H);
 
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	

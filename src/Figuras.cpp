@@ -39,6 +39,20 @@ void Figuras::RotateFigure(int deg) {
     }
 }
 
+void Figuras::ScaleFigure(float W, float H)
+{
+    for (int i = 0; i < puntos.size(); i++) {
+        puntos[i].x -= center.x;
+        puntos[i].y -= center.y;
+        int tx = puntos[i].x;
+        int ty = puntos[i].y;        
+        puntos[i].x *= W;
+        puntos[i].y *= H;
+        puntos[i].x += center.x;
+        puntos[i].y += center.y;
+    }
+}
+
 void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
 {
     int dx = p2.x - p1.x;

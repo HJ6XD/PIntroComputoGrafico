@@ -50,17 +50,17 @@ int main()
 
         FDL.DibujarCirculoBresenham(500, 350, 50);
         if (IsKeyPressed(KEY_Q))
-            trianguloD->RotateFigure(20);
+            trianguloD->ScaleFigure(2,2);
         if (IsKeyPressed(KEY_W))
-            cuadradoD->RotateFigure(20);
+            cuadradoD->ScaleFigure(1.5, 1.5);
         if (IsKeyPressed(KEY_E))
-            circuloD->RotateFigure(20);
+            circuloD->ScaleFigure(.5, .5);
         if (IsKeyPressed(KEY_A))
-            trianguloB->RotateFigure(20);
+            trianguloB->ScaleFigure(2, .5);
         if (IsKeyPressed(KEY_S))
-            cuadradoB->RotateFigure(20);
+            cuadradoB->ScaleFigure(.5, 2);
         if (IsKeyPressed(KEY_D))
-            circuloB->RotateFigure(20);
+            circuloB->ScaleFigure(.5, 2.5);
 
         for (int i = 0; i < figuras->size(); i++) {
             figuras->at(i)->Draw();
