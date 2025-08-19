@@ -9,6 +9,7 @@ acceleration({ 0,0 })
 
 void Pelota::Rebotar()
 {
+	acceleration.y *= -1;
 }
 
 void Pelota::Start()
@@ -18,7 +19,11 @@ void Pelota::Start()
 
 void Pelota::Update()
 {
-	AddForce(GRAVITY);
+	if (IsKeyPressed(KEY_SPACE))
+	{
+		AddForce({0,-20});
+	}
+	AddGravity();
 	Accelerate();
 	Move();
 }
@@ -31,28 +36,43 @@ void Pelota::Draw()
 void Pelota::Accelerate()
 {
 	velocity.x += acceleration.x;
-	if (velocity.x > MAX_SPEED.x)
-		velocity.x = MAX_SPEED.x;
+	if (velocity.x > MAX_VELOCITY.x)
+		velocity.x = MAX_VELOCITY.x;
 	velocity.y += acceleration.y;
-	if (velocity.y > MAX_SPEED.y)
-		velocity.y = MAX_SPEED.y;
+	if (velocity.y > MAX_VELOCITY.y)
+		velocity.y = MAX_VELOCITY.y;
 }
 
 void Pelota::Move()
 {
 	position.x += velocity.x * GetFrameTime();
 	position.y += velocity.y * GetFrameTime();
+	std::cout << "la aceleracion es: " << acceleration.x << ", " << acceleration.y << std::endl;
+
 	std::cout << "la pocision es: " << position.x << ", " << position.y << std::endl;
 	miFigura->TranslateFigure(velocity.x, velocity.y);
 }
 
 void Pelota::AddForce(Vector2 force)
 {
-	acceleration.x += force.x * GetFrameTime();
+	acceleration.x += force.x;	
 	if (acceleration.x > MAX_ACCELERATION.x)
 		acceleration.x = MAX_ACCELERATION.x;
-	acceleration.y += force.y * GetFrameTime();
+	else if (acceleration.x < MIN_ACCELERATION.x)
+		acceleration.x = MIN_ACCELERATION.x;
+
+	acceleration.y += force.y;
 	if (acceleration.y > MAX_ACCELERATION.y)
 		acceleration.y = MAX_ACCELERATION.y;
-	std::cout << "la aceleracion es: " << acceleration.x << ", " << acceleration.y << std::endl;
+	else if(acceleration.y < MIN_ACCELERATION.y) 
+		acceleration.y = MIN_ACCELERATION.y;	
+}
+
+void Pelota::AddGravity()
+{
+	if (acceleration.y >= GRAVITY.y)
+		return;
+
+	acceleration.y += GRAVITY.y * GetFrameTime();
+
 }

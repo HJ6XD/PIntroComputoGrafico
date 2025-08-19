@@ -1,8 +1,12 @@
 #pragma once
 #include "GameObject.h"
-const Vector2 GRAVITY = { 0, 9 };
-const Vector2 MAX_ACCELERATION = {50,200};
-const Vector2 MAX_SPEED = {120,240};
+#include <algorithm>
+#include <cstdint>
+#include <iomanip> 
+const Vector2 GRAVITY = { 0, 10 };
+const Vector2 MAX_ACCELERATION = {50,20};
+const Vector2 MIN_ACCELERATION = { -50, -20};
+const Vector2 MAX_VELOCITY = {120,240};
 class Pelota :
     public GameObject
 {
@@ -19,5 +23,6 @@ private:
     void Accelerate();
     void Move();
     void AddForce(Vector2 force);
+    void AddGravity();
 };
 

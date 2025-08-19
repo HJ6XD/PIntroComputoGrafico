@@ -5,6 +5,7 @@
 #include "Triangulo.h"
 #include <math.h>
 #include <iostream>
+
 class GameObject
 {
 public: 
