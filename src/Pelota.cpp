@@ -9,7 +9,8 @@ acceleration({ 0,0 })
 
 void Pelota::Rebotar()
 {
-	acceleration.y *= -1;
+	velocity.x *= -1;
+	velocity.y *= -1;
 }
 
 void Pelota::Start()
@@ -21,9 +22,8 @@ void Pelota::Update()
 {
 	if (IsKeyPressed(KEY_SPACE))
 	{
-		AddForce({0,-20});
+		Rebotar();
 	}
-	AddGravity();
 	Accelerate();
 	Move();
 }
@@ -38,7 +38,7 @@ void Pelota::Accelerate()
 	velocity.x += acceleration.x;
 	if (velocity.x > MAX_VELOCITY.x)
 		velocity.x = MAX_VELOCITY.x;
-	velocity.y += acceleration.y;
+	velocity.y += acceleration.y + GRAVITY.y;
 	if (velocity.y > MAX_VELOCITY.y)
 		velocity.y = MAX_VELOCITY.y;
 }
@@ -68,11 +68,3 @@ void Pelota::AddForce(Vector2 force)
 		acceleration.y = MIN_ACCELERATION.y;	
 }
 
-void Pelota::AddGravity()
-{
-	if (acceleration.y >= GRAVITY.y)
-		return;
-
-	acceleration.y += GRAVITY.y * GetFrameTime();
-
-}

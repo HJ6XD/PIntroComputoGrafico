@@ -17,12 +17,11 @@ public:
     void Start() override;
     void Update() override;
     void Draw() override;
-
-private:
-    Vector2 acceleration, velocity;
     void Accelerate();
     void Move();
     void AddForce(Vector2 force);
-    void AddGravity();
+
+private:
+    Vector2 acceleration, velocity;
 };
 
