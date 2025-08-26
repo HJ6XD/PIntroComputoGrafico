@@ -12,9 +12,9 @@ public:
 	Vector2 position;
 	Figuras* miFigura;
 
-	virtual void Start(){}
+	virtual void Start();
 	virtual void Update(){}
-	virtual void Draw(){}
+	virtual void Draw();
 
 protected:
 	float GetMagnitud(Vector2 vector);

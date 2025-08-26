@@ -4,18 +4,17 @@ Pelota::Pelota(Vector2 startPos) : velocity({0,0}),
 acceleration({ 0,0 })
 {
 	position = startPos;
-	miFigura = new Circulo(position, 10, false, RAYWHITE);
+	miFigura = new Circulo(position, radio, false, RAYWHITE);
 }
 
 void Pelota::Rebotar()
 {
-	velocity.x *= -1;
+	if (velocity.y < 0.5 && velocity.y > 0.5)
+		velocity.y = 0;
+	else
 	velocity.y *= -1;
-}
-
-void Pelota::Start()
-{
-	miFigura->InitializeFigure();
+	velocity.y += 0.2;
+	std::cout << velocity.y << std::endl;
 }
 
 void Pelota::Update()
@@ -28,17 +27,9 @@ void Pelota::Update()
 	Move();
 }
 
-void Pelota::Draw()
-{
-	miFigura->Draw();
-}
-
 void Pelota::Accelerate()
 {
-	velocity.x += acceleration.x;
-	if (velocity.x > MAX_VELOCITY.x)
-		velocity.x = MAX_VELOCITY.x;
-	velocity.y += acceleration.y + GRAVITY.y;
+	velocity.y += GRAVITY.y;
 	if (velocity.y > MAX_VELOCITY.y)
 		velocity.y = MAX_VELOCITY.y;
 }
@@ -55,16 +46,16 @@ void Pelota::Move()
 
 void Pelota::AddForce(Vector2 force)
 {
-	acceleration.x += force.x;	
-	if (acceleration.x > MAX_ACCELERATION.x)
-		acceleration.x = MAX_ACCELERATION.x;
-	else if (acceleration.x < MIN_ACCELERATION.x)
-		acceleration.x = MIN_ACCELERATION.x;
+	velocity.x += force.x;
+	if (velocity.x > MAX_ACCELERATION.x)
+		velocity.x = MAX_ACCELERATION.x;
+	else if (velocity.x < MIN_ACCELERATION.x)
+		velocity.x = MIN_ACCELERATION.x;
 
-	acceleration.y += force.y;
-	if (acceleration.y > MAX_ACCELERATION.y)
-		acceleration.y = MAX_ACCELERATION.y;
-	else if(acceleration.y < MIN_ACCELERATION.y) 
-		acceleration.y = MIN_ACCELERATION.y;	
+	velocity.y += force.y;
+	if (velocity.y > MAX_ACCELERATION.y)
+		velocity.y = MAX_ACCELERATION.y;
+	else if(velocity.y < MIN_ACCELERATION.y)
+		velocity.y = MIN_ACCELERATION.y;
 }
 

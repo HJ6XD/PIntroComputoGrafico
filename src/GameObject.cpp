@@ -1,5 +1,15 @@
 #include "../include/GameObject.h"
 
+void GameObject::Start()
+{
+	miFigura->InitializeFigure();
+}
+
+void GameObject::Draw()
+{
+	miFigura->Draw();
+}
+
 float GameObject::GetMagnitud(Vector2 vector)
 {
 	float x2 = vector.x * vector.x;

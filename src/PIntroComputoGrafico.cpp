@@ -3,6 +3,8 @@
 #include <vector>
 #include "../include/GameObject.h"
 #include "../include/Pelota.h"
+#include "../include/Pin.h"
+#include "../include/CollisionDetector.h"
 
 int main()
 {
@@ -15,10 +17,13 @@ int main()
 
     std::vector<GameObject*>* gameObjects = new std::vector<GameObject*>();
 
-    GameObject* pelota = new Pelota({ 300, 150 });
+    Pelota* pelota = new Pelota({ 300, 150 });
     pelota->Start();
-    gameObjects->push_back(pelota);
 
+    Pin* pin = new Pin({ 300, 400 }, 50, BLUE);
+    pin->Start();
+
+    CollisionDetector detectorDeColision = CollisionDetector(pelota);
     // Main game loop
     while (!WindowShouldClose())
     {
@@ -29,10 +34,14 @@ int main()
         BeginDrawing();
         ClearBackground(DARKGRAY);
 
+        if (detectorDeColision.CheckCollisionWithPin(pin))
+            pelota->Rebotar();
+
         /*for (int i = 0; i < gameObjects->size(); i++) {
             gameObjects->at(i)->Draw();
         }*/
         pelota->Draw();
+        pin->Draw();
         EndDrawing();
     }
     CloseWindow();
