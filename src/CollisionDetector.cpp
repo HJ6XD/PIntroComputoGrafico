@@ -12,8 +12,12 @@ bool CollisionDetector::CheckCollisionWithPin(Pin* pin)
 	Vector2 distance = { pin->position.x - player->position.x, pin->position.y - player->position.y };
 	float dmag = sqrt(((distance.x * distance.x) + (distance.y * distance.y)));
 	float radios = (player->radio + pin->radio);
-	if (dmag > radios)
+	if (dmag > radios) {
+		std::cout << "no hubo colision" << std::endl;
 		return false;
-	else
+	}
+	else {
+		std::cout << "si colisionaron" << std::endl;
 		return true;
+	}
 }

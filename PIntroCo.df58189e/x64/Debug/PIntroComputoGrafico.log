@@ -1,4 +1,7 @@
-﻿  PIntroComputoGrafico.cpp
-  PIntroComputoGrafico.vcxproj -> C:\Users\alumnos\Desktop\Carpeta de Diego\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
-  "pwsh.exe" no se reconoce como un comando interno o externo,
-  programa o archivo por lotes ejecutable.
+﻿  Pelota.cpp
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(4,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Pelota.cpp")
+  
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Pelota.cpp(51,68): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Pelota.cpp(51,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+LINK : fatal error LNK1168: no se puede abrir C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe para escritura

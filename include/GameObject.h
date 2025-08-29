@@ -20,3 +20,7 @@ protected:
 	float GetMagnitud(Vector2 vector);
 };
 
+class Obstacle : public GameObject {
+public:
+	float bounceValue;
+};

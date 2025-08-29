@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.h"
 class Pared :
-    public GameObject
+    public Obstacle
 {
 public:
     Pared(Vector2 c, int h, int w);

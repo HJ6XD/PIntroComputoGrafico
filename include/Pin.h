@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.h"
 class Pin :
-    public GameObject
+    public Obstacle
 {
 public:
     int radio;
