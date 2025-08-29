@@ -4,8 +4,8 @@ class Pared :
     public Obstacle
 {
 public:
-    Pared(Vector2 c, int h, int w);
-    Pared(Vector2 c, int h, int w, int deg);
+    Pared(Vector2& c, int h, int w);
+    Pared(Vector2& c, int h, int w, int deg);
 
     Vector2 ProvideCenter();
     int ProvideMinX();

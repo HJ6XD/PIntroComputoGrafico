@@ -11,8 +11,11 @@ public:
 	std::vector<Vector2> puntos;
 	std::vector<Vector2>::iterator it;
 	Color color;
-	Vector2 center;
+	Vector2& center;
 	bool isDDA, isBresenham;
+
+	
+	Figuras(Vector2& c) : center(c){ }
 
 	virtual void DrawFigure() {}
 	virtual void RasterizeFigure() {}

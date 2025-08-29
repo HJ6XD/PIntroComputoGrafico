@@ -1,11 +1,11 @@
 #include "../include/Circulo.h"
 
-Circulo::Circulo(Vector2 c, int r, bool isD, Color co) : radius(r) {
+Circulo::Circulo(Vector2& c, int r, bool isD, Color co) : Figuras(c) {
     puntos = std::vector<Vector2>();
     color = co;
-    center = c;
     isDDA = isD;
     isBresenham = !isD;
+    radius = r;
 }
 
 void Circulo::DrawFigure()

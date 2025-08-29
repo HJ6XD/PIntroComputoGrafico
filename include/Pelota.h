@@ -10,7 +10,7 @@ class Pelota :
 {
 
 public:
-    Pelota(Vector2 startPos);
+    Pelota(Vector2& startPos);
     void Rebotar();
     void Rebotar(float bounceVal);
     void Update() override;

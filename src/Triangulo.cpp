@@ -2,8 +2,10 @@
 
 
 
-Triangulo::Triangulo(Vector2 c, int w, int h, bool isD, Color col) : height(h), width(w)
+Triangulo::Triangulo(Vector2 c, int w, int h, bool isD, Color col) : Figuras(c)
 {
+    height = h;
+    width = w;
     puntos.clear();
     puntos = std::vector<Vector2>();
     color = col;

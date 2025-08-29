@@ -17,10 +17,12 @@ int main()
 
     std::vector<GameObject*>* gameObjects = new std::vector<GameObject*>();
 
-    Pelota* pelota = new Pelota({ 300, 150 });
+    Vector2 pelotaPos = { 300, 150 };
+    Pelota* pelota = new Pelota(pelotaPos);
     pelota->Start();
 
-    Pin* pin = new Pin({ 300, 400 }, 50, BLUE);
+    Vector2 strartPinPos = { 300, 450 };
+    Pin* pin = new Pin(strartPinPos, 50, 0, BLUE);
     pin->Start();
 
     CollisionDetector detectorDeColision = CollisionDetector(pelota);

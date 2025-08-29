@@ -1,7 +1,9 @@
 #include "../include/Cuadrado.h"
 
-Cuadrado::Cuadrado(Vector2 cen, int w, int h, bool isD, Color c) : width(w), height(h)
+Cuadrado::Cuadrado(Vector2 cen, int w, int h, bool isD, Color c) : Figuras(cen)
 {
+    width = w;
+    height = h;
     puntos = std::vector<Vector2>();
     color = c;
     center = cen;

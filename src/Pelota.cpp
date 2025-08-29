@@ -1,10 +1,10 @@
 #include "../include/Pelota.h"
 
-Pelota::Pelota(Vector2 startPos) : velocity({0,0}), 
-acceleration({ 0,0 })
+Pelota::Pelota(Vector2& startPos) : GameObject(startPos)
 {
-	position = startPos;
-	miFigura = new Circulo(startPos, radio, false, RAYWHITE);
+	velocity = { 0,0 };
+	acceleration = { 0,0 };
+	miFigura = new Circulo(position, radio, false, RAYWHITE);
 }
 
 void Pelota::Rebotar()

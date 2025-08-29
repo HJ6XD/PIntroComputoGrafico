@@ -1,14 +1,16 @@
 #include "../include/Pared.h"
 
-Pared::Pared(Vector2 c, int h, int w) : 
-    width(w), height(h), currentRotation(0) {
-    position = c;
+Pared::Pared(Vector2& c, int h, int w) : Obstacle(c, 0) {
+    width = h;
+    height = h;
+    currentRotation = 0;
     miFigura = new Cuadrado(position, width, height, true, DARKPURPLE);
 }
 
-Pared::Pared(Vector2 c, int h, int w, int deg) : 
-    width(w), height(h), currentRotation(deg){
-    position = c;
+Pared::Pared(Vector2& c, int h, int w, int deg) : Obstacle(c, 0) {
+    width = h;
+    height = h;
+    currentRotation = deg;
     miFigura = new Cuadrado(position, width, height, true, DARKPURPLE);
 }
 
