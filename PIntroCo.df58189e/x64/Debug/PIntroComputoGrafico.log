@@ -1,11 +1,9 @@
-﻿  Pared.cpp
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pared.cpp(24,12): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pared.cpp(29,12): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pared.cpp(34,12): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pared.cpp(39,12): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\src\Pared.cpp(49,1): warning C4102: 'base': etiqueta sin referencia
-  Pin.cpp
-  Generando código...
-  PIntroComputoGrafico.vcxproj -> C:\Users\Estudiante\Desktop\Carpeta de Diego Jiménez (el chido)\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
+﻿  Pelota.cpp
+C:\Users\alumnos\Desktop\Carpeta de Diego\PIntroComputoGrafico\include\Pelota.h(4,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Pelota.cpp")
+  
+C:\Users\alumnos\Desktop\Carpeta de Diego\PIntroComputoGrafico\src\Pelota.cpp(48,68): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\alumnos\Desktop\Carpeta de Diego\PIntroComputoGrafico\src\Pelota.cpp(48,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  PIntroComputoGrafico.vcxproj -> C:\Users\alumnos\Desktop\Carpeta de Diego\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

@@ -10,7 +10,7 @@ public:
 
 	bool CheckCollisionWithPared(Pared*);
 
-	bool CheckCollisionWithPin(Pin* pin);
+	Vector2 CheckCollisionWithPin(Pin* pin);
 
 private:
 	Pelota* player;

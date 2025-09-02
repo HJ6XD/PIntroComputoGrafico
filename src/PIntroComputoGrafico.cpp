@@ -17,12 +17,12 @@ int main()
 
     std::vector<GameObject*>* gameObjects = new std::vector<GameObject*>();
 
-    Vector2 pelotaPos = { 300, 150 };
+    Vector2 pelotaPos = { 310, 150 };
     Pelota* pelota = new Pelota(pelotaPos);
     pelota->Start();
 
     Vector2 strartPinPos = { 300, 450 };
-    Pin* pin = new Pin(strartPinPos, 50, 0, BLUE);
+    Pin* pin = new Pin(strartPinPos, 50, 200, BLUE);
     pin->Start();
 
     CollisionDetector detectorDeColision = CollisionDetector(pelota);
@@ -36,14 +36,16 @@ int main()
         BeginDrawing();
         ClearBackground(DARKGRAY);
 
-        if (detectorDeColision.CheckCollisionWithPin(pin))
-            pelota->Rebotar();
+        Vector2 ndir = detectorDeColision.CheckCollisionWithPin(pin);
+            if (ndir.y != 0 || ndir.x != 0)
+            pelota->Rebotar(ndir);
 
         /*for (int i = 0; i < gameObjects->size(); i++) {
             gameObjects->at(i)->Draw();
         }*/
         pelota->Draw();
         pin->Draw();
+        DrawLine(0, 400, 600, 400, GOLD);
         EndDrawing();
     }
     CloseWindow();
