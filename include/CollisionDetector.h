@@ -1,5 +1,5 @@
 #pragma once
-#include <list>
+#include <vector>
 #include "Pared.h"
 #include "Pin.h"
 #include "Pelota.h"
@@ -8,11 +8,15 @@ class CollisionDetector
 public: 
 	CollisionDetector(Pelota* p);
 
-	bool CheckCollisionWithPared(Pared*);
+	Vector2 CheckCollisionWithPared(Pared*);
 
 	Vector2 CheckCollisionWithPin(Pin* pin);
 
 private:
 	Pelota* player;
+
+	float vectorDotProduct(Vector2 pt1, Vector2 pt2){
+		return (pt1.x * pt2.x) + (pt1.y * pt2.y);
+	}
 };
 

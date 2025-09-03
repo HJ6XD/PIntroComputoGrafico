@@ -19,13 +19,36 @@ public:
 
 protected:
 	float GetMagnitud(Vector2 vector);
+
 };
 
 class Obstacle : public GameObject {
 public:
 	float bounceValue;
+	int width, height;
+	int currentRotation;
+
 	Obstacle(Vector2& pos, float bv) : GameObject(pos) 
 	{
 		bounceValue = bv;
+	}
+	Vector2 ProvideCenter() {
+		return position;
+	}
+
+	int ProvideMinX(){
+		return (position.x - (width / 2));
+	}
+
+	int ProvideMaxX(){
+		return (position.x + (width / 2));
+	}
+
+	int ProvideMinY(){
+		return (position.y - (height / 2));;
+	}
+
+	int ProvideMaxY(){
+		return (position.y + (height / 2));;
 	}
 };

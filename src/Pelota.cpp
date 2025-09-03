@@ -27,10 +27,6 @@ void Pelota::Rebotar(Vector2 ndir)
 
 void Pelota::Update()
 {
-	if (IsKeyPressed(KEY_SPACE))
-	{
-		Rebotar();
-	}
 	Accelerate();
 	Move();
 }
