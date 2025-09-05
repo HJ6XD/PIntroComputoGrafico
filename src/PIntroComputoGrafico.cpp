@@ -21,10 +21,9 @@ int main()
     Pelota* pelota = new Pelota(pelotaPos);
     pelota->Start();
 
-    Vector2 strartPinPos = { 300, 450 };
-    Pin* pin = new Pin(strartPinPos, 50, 200, BLUE);
-    pin->Start();
-
+    Vector2 strartParedPos = { 300, 600 };
+    Obstacle* pared = new Pared(strartParedPos, 80, 120, 20);
+    pared->Start();
     CollisionDetector detectorDeColision = CollisionDetector(pelota);
     // Main game loop
     while (!WindowShouldClose())
@@ -36,7 +35,7 @@ int main()
         BeginDrawing();
         ClearBackground(DARKGRAY);
 
-        Vector2 ndir = detectorDeColision.CheckCollisionWithPin(pin);
+        Vector2 ndir = detectorDeColision.CheckCollisionWithPared(pared);
             if (ndir.y != 0 || ndir.x != 0)
             pelota->Rebotar(ndir);
 
@@ -44,8 +43,7 @@ int main()
             gameObjects->at(i)->Draw();
         }*/
         pelota->Draw();
-        pin->Draw();
-        DrawLine(0, 400, 600, 400, GOLD);
+        pared->Draw();
         EndDrawing();
     }
     CloseWindow();

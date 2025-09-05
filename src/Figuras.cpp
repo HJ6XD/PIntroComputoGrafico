@@ -64,8 +64,8 @@ void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)
         Vector2 p = { p1.x + (xinc * i), p1.y + (yinc * i) };
         p.x = std::floor(p.x);
         p.y = std::floor(p.y);
-        if (CheckIfAlredyOnList(p))
-            puntos.push_back(p);
+        //(CheckIfAlredyOnList(p))
+        puntos.push_back(p);
     }
 }
 
@@ -106,8 +106,9 @@ void Figuras::DrawLineBresenham(Vector2 p1, Vector2 p2)
         float tx = X, ty = Y;
         Vector2 p = { std::floor(tx), std::floor(ty) };
 
-        if(CheckIfAlredyOnList(p))
-            puntos.push_back(p);
+        
+        //if(CheckIfAlredyOnList(p))
+        puntos.push_back(p);
 
         if (av >= 0) {
             X += incxi;

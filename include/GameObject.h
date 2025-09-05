@@ -36,19 +36,35 @@ public:
 		return position;
 	}
 
-	int ProvideMinX(){
-		return (position.x - (width / 2));
-	}
+    std::vector<Vector2> getVertices() const {
+        std::vector<Vector2> verts;
 
-	int ProvideMaxX(){
-		return (position.x + (width / 2));
-	}
+        // mitad del ancho y alto
+        float hw = width * 0.5f;
+        float hh = height * 0.5f;
 
-	int ProvideMinY(){
-		return (position.y - (height / 2));;
-	}
+        // vértices en espacio local (respecto al centro)
+        std::vector<Vector2> localVerts = {
+            {-hw, -hh}, // abajo-izquierda
+            { hw, -hh}, // abajo-derecha
+            { hw,  hh}, // arriba-derecha
+            {-hw,  hh}  // arriba-izquierda
+        };
 
-	int ProvideMaxY(){
-		return (position.y + (height / 2));;
-	}
+        // precomputar sen y cos
+        float rad = currentRotation * (PI / 180.0f);
+        float cosR = std::cos(rad);
+        float sinR = std::sin(rad);
+
+        // rotar y trasladar
+        for (auto& v : localVerts) {
+            Vector2 rotated = {
+                v.x * cosR - v.y * sinR,
+                v.x * sinR + v.y * cosR
+            };
+            verts.push_back({ rotated.x + position.x, rotated.y + position.y });
+        }
+
+        return verts;
+    }
 };

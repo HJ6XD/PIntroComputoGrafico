@@ -40,7 +40,6 @@ void Pelota::Accelerate()
 
 void Pelota::Move()
 {
-	std::cout << "la pocision es: " << position.x << ", " << position.y << std::endl;
 	miFigura->TranslateFigure(velocity.x * GetFrameTime(), velocity.y * GetFrameTime());
 	//position.x = miFigura->center.x + velocity.x * GetFrameTime();
 	//position.y = miFigura->center.y + velocity.y * GetFrameTime();

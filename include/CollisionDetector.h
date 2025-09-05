@@ -8,7 +8,7 @@ class CollisionDetector
 public: 
 	CollisionDetector(Pelota* p);
 
-	Vector2 CheckCollisionWithPared(Pared*);
+	Vector2 CheckCollisionWithPared(Obstacle*);
 
 	Vector2 CheckCollisionWithPin(Pin* pin);
 

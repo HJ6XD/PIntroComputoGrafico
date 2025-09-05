@@ -1,7 +1,7 @@
 #include "../include/Pared.h"
 
 Pared::Pared(Vector2& c, int h, int w) : Obstacle(c, 0) {
-    width = h;
+    width = w;
     height = h;
     currentRotation = 0;
     miFigura = new Cuadrado(position, width, height, true, DARKPURPLE);
@@ -16,7 +16,7 @@ Pared::Pared(Vector2& c, int h, int w, int deg) : Obstacle(c, 0) {
 
 void Pared::Start()
 {
-base:Start();
-    miFigura->RotateFigure(currentRotation);
+    miFigura->InitializeFigure();
+    if(currentRotation != 0) miFigura->RotateFigure(currentRotation);
 }
 

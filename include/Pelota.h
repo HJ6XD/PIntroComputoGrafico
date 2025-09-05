@@ -18,6 +18,7 @@ public:
     void Move();
     void AddForce(Vector2 force);
 
+    Vector2 GetVelocity() { return velocity; }
     const int radio = 10;
 private:
     Vector2 acceleration, velocity;
