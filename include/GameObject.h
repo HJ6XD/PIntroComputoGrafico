@@ -27,6 +27,7 @@ public:
 	float bounceValue;
 	int width, height;
 	int currentRotation;
+    bool isPin, isPared;
 
 	Obstacle(Vector2& pos, float bv) : GameObject(pos) 
 	{

@@ -4,8 +4,6 @@ class Pin :
     public Obstacle
 {
 public:
-    int radio;
     Pin(Vector2& p, int r, float bv, Color c);
-
 };
 
