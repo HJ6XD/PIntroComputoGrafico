@@ -1,5 +1,6 @@
 #pragma once
 #include "GameObject.h"
+#include "Score.h"
 
 const float GRAVITY = 9.1;
 //const Vector2 MAX_ACCELERATION = {50,20};
@@ -26,5 +27,6 @@ public:
 private:
     Vector2 acceleration, velocity;
     bool isActive;
+    Score score;
 };
 

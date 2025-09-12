@@ -41,3 +41,8 @@ void Cuadrado::RasterizeFigure()
             DrawLineBresenham({ xmin, cy }, { xmax, cy });
     }
 }
+
+void Cuadrado::MoveCenter(Vector2 newCenter)
+{
+    center = newCenter;
+}

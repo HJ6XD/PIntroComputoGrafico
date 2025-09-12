@@ -10,5 +10,6 @@ public:
     Cuadrado(Vector2 str, int w, int h, bool isD, Color c);
     void DrawFigure() override;
     void RasterizeFigure() override;
+    void MoveCenter(Vector2) override;
 };
 

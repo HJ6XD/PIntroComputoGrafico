@@ -120,7 +120,8 @@ Vector2 CollisionDetector::CheckCollisionWithPared(Obstacle* pared)
     float speed = std::sqrt(vel.x * vel.x + vel.y * vel.y);
     float d = vel.x * normal.x + vel.y * normal.y;
     Vector2 reflected = { vel.x - 2.f * d * normal.x, vel.y - 2.f * d * normal.y };
-    return reflected; // si prefieres, devuelve `normal`
+    Vector2 refnorm = normalize(reflected);
+    return refnorm; // si prefieres, devuelve `normal`
 }
 
 Vector2 CollisionDetector::CheckCollisionWithPin(Obstacle* pin)

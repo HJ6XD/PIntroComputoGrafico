@@ -6,6 +6,9 @@
 #include "../include/Pin.h"
 #include "../include/CollisionDetector.h"
 #include "../include/PelotaSpawner.h"
+#include "../include/PaddleIzquierda.h"
+#include "../include/PaddleDerecha.h"
+#include "../include/Triangulo.h"
 #include <algorithm>
 std::vector<Obstacle*>* obstaculos = new std::vector<Obstacle*>();
 
@@ -87,19 +90,29 @@ int main()
 
     CollisionDetector detectorDeColision = CollisionDetector(pelota);
 
+    PaddleIzquierda* padIzq = new PaddleIzquierda({250, 850}, 50, 20);
+    padIzq->Start();
+    obstaculos->push_back(padIzq);
+    PaddleDerecha* padDer = new PaddleDerecha({ 350,850 }, 50, 20);
+    padDer->Start();
+    obstaculos->push_back(padDer);
     //Creacion del mapa
     CrearMapa();
 
-   
+   //Decoración
+    Triangulo* tri1 = new Triangulo({300, 50}, 50,50, true, YELLOW);
+    tri1->InitializeFigure();
+    Triangulo* tri2 = new Triangulo({275, 100}, 50,50, true, YELLOW);
+    tri2->InitializeFigure();
+    Triangulo* tri3 = new Triangulo({325, 100}, 50,50, true, YELLOW);
+    tri3->InitializeFigure();
     while (!WindowShouldClose())
     {
-        spawner->Update();/*
-        if (IsKeyReleased(KEY_SPACE))
-            pelota = spawner->providePelota();*/
-        // Colisiones
+        spawner->Update();
+        padIzq->Update();
+        padDer->Update();
         if (pelota->CheckActive()) {
             pelota->Update();          
-
             
             for (int i = 0; i < obstaculos->size(); i++) {
                 Vector2 ndir;
@@ -123,7 +136,11 @@ int main()
         for (int i = 0; i < obstaculos->size(); i++) {
             obstaculos->at(i)->Draw();
         }
+        tri1->Draw();
+        tri2->Draw();
+        tri3->Draw();
         pelota->Draw();
+        padDer->Draw();
         EndDrawing();
     }
     CloseWindow();

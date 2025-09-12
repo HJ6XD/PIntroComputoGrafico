@@ -6,6 +6,7 @@ Pelota::Pelota(Vector2& startPos) : GameObject(startPos)
 	acceleration = { 0,0 };
 	miFigura = new Circulo(position, radio, false, RAYWHITE);
 	isActive = true;
+	score = Score();
 }
 
 void Pelota::Rebotar()
@@ -20,10 +21,11 @@ void Pelota::Rebotar()
 void Pelota::Rebotar(Vector2 ndir)
 {
 	float speed = sqrt((velocity.x * velocity.x) + (velocity.y * velocity.y));
-	speed /= 5;
+	speed *= 1.2;
 	ndir.x *= speed;
 	ndir.y *= speed;
 	SetVelocity(ndir);
+	score.UpdateScore(10);
 }
 
 void Pelota::Update()
@@ -38,6 +40,7 @@ void Pelota::Draw()
 {
 	if (isActive)
 		miFigura->Draw();
+	score.DrawScore();
 }
 
 void Pelota::Accelerate()
@@ -54,8 +57,10 @@ void Pelota::Move()
 	miFigura->TranslateTo(position);
 	std::cout << "Pelota pos: " << position.x << ", " << position.y << std::endl;
 	if (position.y > GetScreenHeight() || position.x > GetScreenWidth()
-		|| position.y < 0 || position.x < 0)
+		|| position.y < 0 || position.x < 0) {
 		SetActive(false);
+		score.ResetScore();
+	}
 	
 }
 

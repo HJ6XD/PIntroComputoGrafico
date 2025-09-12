@@ -25,6 +25,7 @@ public:
 	void RotateFigure(int deg);
 	void ScaleFigure(float W, float H);
 	void TranslateTo(Vector2);
+	virtual void MoveCenter(Vector2) {}
 
 protected:
 	void DrawLineDDA(Vector2 p1, Vector2 p2);	

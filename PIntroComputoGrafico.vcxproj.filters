@@ -60,7 +60,13 @@
     <ClCompile Include="src\PelotaSpawner.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="src\Paddles.cpp">
+    <ClCompile Include="src\PaddleIzquierda.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PaddleDerecha.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Score.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -98,7 +104,13 @@
     <ClInclude Include="include\PelotaSpawner.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\Paddles.h">
+    <ClInclude Include="include\PaddleIzquierda.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PaddleDerecha.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Score.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
