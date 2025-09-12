@@ -46,12 +46,12 @@ void PelotaSpawner::DrawForceText()
 {
 	if (!pelota->CheckActive()) {
 		if (IsKeyDown(KEY_SPACE)) {
-			DrawText(forceText.c_str(), 290, 600, 20, RED);
+			DrawText(forceText.c_str(), 290, 650, 20, RED);
 		}
 		else {
-			DrawText("Manten presionado espacio para darle fuerza ala pelota", 100, 540, 16, RED);
-			DrawText("Para dispararla, suelta espacio", 100, 560, 16, RED);
-			DrawText("La pelota sladrá disparada con dirección a tu mouse", 100, 580, 16, RED);
+			DrawText("Manten presionado espacio para darle fuerza ala pelota", 100, 600, 16, RED);
+			DrawText("Para dispararla, suelta espacio", 100, 620, 16, RED);
+			DrawText("La pelota saldra disparada con dirección a tu mouse", 100, 640, 16, RED);
 		}
 	}
 }

@@ -1,65 +1,7 @@
-﻿  Circulo.cpp
-  CollisionDetector.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Circulo.cpp(34,14): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Circulo.cpp(49,10): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(5,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/CollisionDetector.cpp")
-  
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(10,18): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(10,18): warning C4244:         with
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(10,18): warning C4244:         [
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(10,18): warning C4244:             _Ty=int
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(10,18): warning C4244:         ]
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\CollisionDetector.cpp(131,15): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  Cuadrado.cpp
-  Figuras.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(6,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(6,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(33,16): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(34,16): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(68,12): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(69,12): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(89,12): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(90,12): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(110,11): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(110,25): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(116,18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Figuras.cpp(116,26): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  GameObject.cpp
-  PIntroComputoGrafico.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(5,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/PIntroComputoGrafico.cpp")
-  
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,29): warning C4838: la conversión de 'int' en 'float' requiere una conversión de restricción
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,29): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,35): warning C4838: la conversión de 'int' en 'float' requiere una conversión de restricción
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,35): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  PaddleDerecha.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleDerecha.cpp(11,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleDerecha.cpp(23,23): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleDerecha.cpp(42,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleDerecha.cpp(45,23): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  PaddleIzquierda.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(11,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(23,23): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(42,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(45,23): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  Pared.cpp
-  Pelota.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(5,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Pelota.cpp")
-  
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\Pelota.cpp(24,11): warning C4305: '*=': truncamiento de 'double' a 'float'
-  PelotaSpawner.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(5,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/PelotaSpawner.cpp")
-  
+﻿  PelotaSpawner.cpp
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PelotaSpawner.cpp(24,15): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PelotaSpawner.cpp(26,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PelotaSpawner.cpp(26,22): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-  Pin.cpp
-  Triangulo.cpp
-  Generando código...
   PIntroComputoGrafico.vcxproj -> C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

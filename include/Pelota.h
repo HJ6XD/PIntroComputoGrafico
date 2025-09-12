@@ -2,7 +2,7 @@
 #include "GameObject.h"
 #include "Score.h"
 
-const float GRAVITY = 9.1;
+const float GRAVITY = 8;
 //const Vector2 MAX_ACCELERATION = {50,20};
 //const Vector2 MIN_ACCELERATION = { -50, -20};
 const Vector2 MAX_VELOCITY = {250,400};

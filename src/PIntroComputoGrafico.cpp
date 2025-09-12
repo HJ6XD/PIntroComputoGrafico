@@ -63,7 +63,7 @@ void CrearMapa() {
 
     //Creacion de los pines
     for (int i = 0; i < 4; i++) {
-        int ypos = 250 + i * 75;
+        int ypos = 320 + i * 75;
         int rad = 4 + 4 * i;
         for (int j = 0; j < 6; j++) {
             int xpos = 120 + j * 70;
@@ -82,9 +82,9 @@ int main()
 
     InitWindow(screenWidth, screenHeight, "Proximo pinball");
 
-    SetTargetFPS(30);
+    SetTargetFPS(60);
 
-    PelotaSpawner* spawner = new PelotaSpawner({300,750});
+    PelotaSpawner* spawner = new PelotaSpawner({300,700});
 
     Pelota* pelota = spawner->providePelota();
 
