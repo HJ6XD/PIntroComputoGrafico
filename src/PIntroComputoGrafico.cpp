@@ -5,70 +5,71 @@
 #include "../include/Pelota.h"
 #include "../include/Pin.h"
 #include "../include/CollisionDetector.h"
+#include "../include/PelotaSpawner.h"
+#include <algorithm>
 std::vector<Obstacle*>* obstaculos = new std::vector<Obstacle*>();
 
 void CrearMapa() {
-    Vector2 obpos1 = { 550, 450 };
-    Obstacle* paredDerecha = new Pared(obpos1, 800, 30);
+    Obstacle* paredDerecha = new Pared({ 550, 500 }, 700, 40);
     paredDerecha->Start();
     obstaculos->push_back(paredDerecha);
 
-    Vector2 obpos2 = { 50, 450 };
-    Obstacle* paredIzquierda = new Pared(obpos2, 800, 30);
+    Obstacle* paredIzquierda = new Pared({ 50, 500 }, 700, 40);
     paredIzquierda->Start();
     obstaculos->push_back(paredIzquierda);
 
-    Vector2 obpos3 = { 130, 880 };
-    Obstacle* abajoIzquierda = new Pared(obpos3, 30, 170, 30);
+    Obstacle* abajoIzquierda = new Pared({ 130, 880 }, 40, 170, 30);
     abajoIzquierda->Start();
     obstaculos->push_back(abajoIzquierda);
 
-    Vector2 obpos4 = { 470, 880 };
-    Obstacle* abajoDerecha = new Pared(obpos4, 30, 170, -30);
+    Obstacle* abajoDerecha = new Pared({ 470, 880 }, 40, 170, -30);
     abajoDerecha->Start();
     obstaculos->push_back(abajoDerecha);
     
-    Vector2 obpos5 = { 400, 950 };
-    Obstacle* hastaAbajoI = new Pared(obpos5, 80, 30);
+    Obstacle* hastaAbajoI = new Pared({ 400, 950 }, 80, 40);
     hastaAbajoI->Start();
     obstaculos->push_back(hastaAbajoI);
     
-    Vector2 obpos6 = { 200, 950 };
-    Obstacle* hastaAbajoD = new Pared(obpos6, 80, 30);
+    Obstacle* hastaAbajoD = new Pared({ 200, 950 }, 80, 40);
     hastaAbajoD->Start();
     obstaculos->push_back(hastaAbajoD);
 
-    Vector2 obpos7 = { 180, 820 };
-    Obstacle* muerteAI = new Pared(obpos7, 20, 120, 30);
+    Obstacle* muerteAI = new Pared({ 180, 820 }, 30, 120, 30);
     muerteAI->Start();
     obstaculos->push_back(muerteAI);
 
-    Vector2 obpos8 = { 420, 820 };
-    Obstacle* muerteAD = new Pared(obpos8, 20, 120, -30);
+    Obstacle* muerteAD = new Pared({ 420, 820 }, 30, 120, -30);
     muerteAD->Start();
     obstaculos->push_back(muerteAD);
     
-    Vector2 obpos9 = { 130, 700 };
-    Obstacle* muerteEI = new Pared(obpos9, 200, 20);
+    Obstacle* muerteEI = new Pared({ 130, 700 }, 200, 30);
     muerteEI->Start();
     obstaculos->push_back(muerteEI);
 
-    Vector2 obpos10 = { 470, 700 };
-    Obstacle* muerteED = new Pared(obpos10, 200, 20);
+    Obstacle* muerteED = new Pared({ 470, 700 }, 200, 30);
     muerteED->Start();
     obstaculos->push_back(muerteED);
+    
+    Obstacle* techoI = new Pared({ 180, 90 }, 40, 300, -30);
+    techoI->Start();
+    obstaculos->push_back(techoI);
+
+    Obstacle* techoD = new Pared({ 420, 90 }, 40, 300, 30);
+    techoD->Start();
+    obstaculos->push_back(techoD);
 
     //Creacion de los pines
-    /*for (int i = 0; i < 10; i++) {
-        int randYPos = GetRandomValue(100, 550);
-        int randXPos = GetRandomValue(110, 490);
-        int randRad = GetRandomValue(5, 15);
-
-        Vector2 randomPos = { randXPos, randYPos };
-        Obstacle* circ = new Pin(randomPos, randRad, 12, RAYWHITE);
-        circ->Start();
-        obstaculos->push_back(circ);
-    }*/
+    for (int i = 0; i < 4; i++) {
+        int ypos = 250 + i * 75;
+        int rad = 4 + 4 * i;
+        for (int j = 0; j < 6; j++) {
+            int xpos = 120 + j * 70;
+            Vector2 pos = { xpos, ypos };
+            Obstacle* cpin = new Pin(pos, rad, 1, RAYWHITE);
+            cpin->Start();
+            obstaculos->push_back(cpin);
+        }
+    }
 }
 
 int main()
@@ -80,40 +81,41 @@ int main()
 
     SetTargetFPS(30);
 
-    Vector2 pelotaPos = { 510, 150 };
-    Pelota* pelota = new Pelota(pelotaPos);
-    pelota->Start();
+    PelotaSpawner* spawner = new PelotaSpawner({300,750});
+
+    Pelota* pelota = spawner->providePelota();
 
     CollisionDetector detectorDeColision = CollisionDetector(pelota);
 
     //Creacion del mapa
     CrearMapa();
 
-    // Main game loop
+   
     while (!WindowShouldClose())
     {
-        for (int i = 0; i < obstaculos->size(); i++) {
-            obstaculos->at(i)->Update();
-        }
-        pelota->Update();
+        spawner->Update();/*
+        if (IsKeyReleased(KEY_SPACE))
+            pelota = spawner->providePelota();*/
+        // Colisiones
+        if (pelota->CheckActive()) {
+            pelota->Update();          
 
-        for (int i = 0; i < obstaculos->size(); i++) {
-            Vector2 ndir;
-            ndir = detectorDeColision.CheckCollisionWithPared(obstaculos->at(i));
-            if (ndir.x != 0 || ndir.y != 0)
-                pelota->Rebotar(ndir);
-            /*if (obstaculos->at(i)->isPin == true) {
-                ndir = detectorDeColision.CheckCollisionWithPin(obstaculos->at(i));
-                if (ndir.x != 0 || ndir.y != 0)
-                    pelota->Rebotar(ndir);
+            
+            for (int i = 0; i < obstaculos->size(); i++) {
+                Vector2 ndir;
+                if (obstaculos->at(i)->isPin == true) {
+                    ndir = detectorDeColision.CheckCollisionWithPin(obstaculos->at(i));
+                    if (ndir.x != 0 || ndir.y != 0)
+                        pelota->Rebotar(ndir);
+                }
+                else if (obstaculos->at(i)->isPared == true) {
+                    ndir = detectorDeColision.CheckCollisionWithPared(obstaculos->at(i));
+                    if (ndir.x != 0 || ndir.y != 0)
+                        pelota->Rebotar(ndir);
+                }
             }
-            else if (obstaculos->at(i)->isPared == true) {
-                ndir = detectorDeColision.CheckCollisionWithPared(obstaculos->at(i));
-                if (ndir.x != 0 || ndir.y != 0)
-                    pelota->Rebotar(ndir);
-            }*/
         }
-
+        
         BeginDrawing();
         ClearBackground(DARKGRAY);
 

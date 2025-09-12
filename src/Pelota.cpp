@@ -5,6 +5,7 @@ Pelota::Pelota(Vector2& startPos) : GameObject(startPos)
 	velocity = { 0,0 };
 	acceleration = { 0,0 };
 	miFigura = new Circulo(position, radio, false, RAYWHITE);
+	isActive = true;
 }
 
 void Pelota::Rebotar()
@@ -18,17 +19,25 @@ void Pelota::Rebotar()
 
 void Pelota::Rebotar(Vector2 ndir)
 {
-	float vmag = (velocity.x * velocity.x) + (velocity.y * velocity.y);
-	vmag = sqrt(vmag);
-	ndir.x *= vmag;
-	ndir.y *= vmag;
-	AddForce(ndir);
+	float speed = sqrt((velocity.x * velocity.x) + (velocity.y * velocity.y));
+	speed /= 5;
+	ndir.x *= speed;
+	ndir.y *= speed;
+	SetVelocity(ndir);
 }
 
 void Pelota::Update()
 {
-	Accelerate();
-	Move();
+	if (isActive) {
+		Accelerate();
+		Move();
+	}
+}
+
+void Pelota::Draw()
+{
+	if (isActive)
+		miFigura->Draw();
 }
 
 void Pelota::Accelerate()
@@ -40,13 +49,17 @@ void Pelota::Accelerate()
 
 void Pelota::Move()
 {
-	miFigura->TranslateFigure(velocity.x * GetFrameTime(), velocity.y * GetFrameTime());
-	//position.x = miFigura->center.x + velocity.x * GetFrameTime();
-	//position.y = miFigura->center.y + velocity.y * GetFrameTime();
-
+	position.x += velocity.x * GetFrameTime();
+	position.y += velocity.y * GetFrameTime();
+	miFigura->TranslateTo(position);
+	std::cout << "Pelota pos: " << position.x << ", " << position.y << std::endl;
+	if (position.y > GetScreenHeight() || position.x > GetScreenWidth()
+		|| position.y < 0 || position.x < 0)
+		SetActive(false);
+	
 }
 
-void Pelota::AddForce(Vector2 force)
+void Pelota::SetVelocity(Vector2 force)
 {
 	velocity.x = force.x;
 	if (velocity.x > MAX_VELOCITY.x)
@@ -58,5 +71,21 @@ void Pelota::AddForce(Vector2 force)
 		velocity.y = MAX_VELOCITY.y;
 	else if(velocity.y < -MAX_VELOCITY.y)
 		velocity.y = -MAX_VELOCITY.y;
+}
+
+void Pelota::SetActive(bool active)
+{
+	isActive = active;
+}
+
+bool Pelota::CheckActive()
+{
+	return isActive;
+}
+
+void Pelota::SetPosition(Vector2 npos)
+{
+	position = npos;
+	miFigura->TranslateTo(npos);
 }
 

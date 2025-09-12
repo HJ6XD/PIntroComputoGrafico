@@ -1,6 +1,6 @@
 #include "../include/Circulo.h"
 
-Circulo::Circulo(Vector2& c, int r, bool isD, Color co) : Figuras(c) {
+Circulo::Circulo(Vector2 c, int r, bool isD, Color co) : Figuras(c) {
     puntos = std::vector<Vector2>();
     color = co;
     isDDA = isD;

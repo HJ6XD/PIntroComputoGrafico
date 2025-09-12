@@ -16,6 +16,7 @@ void Figuras::InitializeFigure()
 void Figuras::TranslateFigure(int x, int y)
 {
     center.x += x; center.y += y;
+    std::cout << "Figura pos: " << center.x << ", " << center.y << std::endl;
     for (int i = 0; i < puntos.size(); i++) {
         puntos.at(i).x += x;
         puntos.at(i).y += y;
@@ -43,14 +44,23 @@ void Figuras::ScaleFigure(float W, float H)
 {
     for (int i = 0; i < puntos.size(); i++) {
         puntos[i].x -= center.x;
-        puntos[i].y -= center.y;
-        int tx = puntos[i].x;
-        int ty = puntos[i].y;        
+        puntos[i].y -= center.y;       
         puntos[i].x *= W;
         puntos[i].y *= H;
         puntos[i].x += center.x;
         puntos[i].y += center.y;
     }
+}
+
+void Figuras::TranslateTo(Vector2 newPos)
+{
+     for (int i = 0; i < puntos.size(); i++) {
+        puntos[i].x -= center.x;
+        puntos[i].y -= center.y;
+        puntos[i].x += newPos.x;
+        puntos[i].y += newPos.y;
+    }
+    center = newPos;
 }
 
 void Figuras::DrawLineDDA(Vector2 p1, Vector2 p2)

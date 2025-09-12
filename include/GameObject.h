@@ -9,9 +9,9 @@
 class GameObject
 {
 public: 
-	Vector2& position;
+	Vector2 position;
 	Figuras* miFigura;
-	GameObject(Vector2& pos) : position(pos){}
+	GameObject(Vector2 pos) : position(pos){}
 
 	virtual void Start();
 	virtual void Update(){}
@@ -29,7 +29,7 @@ public:
 	int currentRotation;
     bool isPin, isPared;
 
-	Obstacle(Vector2& pos, float bv) : GameObject(pos) 
+	Obstacle(Vector2 pos, float bv) : GameObject(pos) 
 	{
 		bounceValue = bv;
 	}
