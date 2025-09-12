@@ -8,6 +8,7 @@ public:
 	void Update() override;
 	void Activate();
 private:
+	float lastRot;
 	float rotationSpeed;
 	const float MAX_ROT = 20;
 	const float MIN_ROT = -30;

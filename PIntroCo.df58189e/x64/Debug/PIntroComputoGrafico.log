@@ -1,11 +1,8 @@
-﻿  PIntroComputoGrafico.cpp
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\include\Pelota.h(5,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/PIntroComputoGrafico.cpp")
-  
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,29): warning C4838: la conversión de 'int' en 'float' requiere una conversión de restricción
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,29): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,35): warning C4838: la conversión de 'int' en 'float' requiere una conversión de restricción
-C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PIntroComputoGrafico.cpp(70,35): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+﻿  PaddleIzquierda.cpp
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(11,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(23,23): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(42,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\src\PaddleIzquierda.cpp(45,23): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   PIntroComputoGrafico.vcxproj -> C:\Users\dj271\Desktop\Introducción a Computo Gráfico\PIntroComputoGrafico\x64\Debug\PIntroComputoGrafico.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

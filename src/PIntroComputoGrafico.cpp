@@ -140,7 +140,8 @@ int main()
         tri2->Draw();
         tri3->Draw();
         pelota->Draw();
-        padDer->Draw();
+
+        spawner->DrawForceText();
         EndDrawing();
     }
     CloseWindow();

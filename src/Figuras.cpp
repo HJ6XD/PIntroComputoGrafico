@@ -26,7 +26,7 @@ void Figuras::TranslateFigure(int x, int y)
 void Figuras::RotateFigure(int deg) {
     float coseno = cos((deg * PI) / 180);
     float seno = sin((deg * PI) / 180);
-
+    std::cout << "rotando" << std::endl;
     for (int i = 0; i < puntos.size(); i++) {
         puntos[i].x -= center.x;
         puntos[i].y -= center.y;

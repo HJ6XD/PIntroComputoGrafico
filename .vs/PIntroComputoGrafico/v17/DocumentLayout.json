@@ -3,64 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Pelota.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\Pelota.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Pelota.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\Pelota.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Score.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\Score.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleDerecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PaddleDerecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleDerecha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\PaddleDerecha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleIzquierda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PaddleIzquierda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\CollisionDetector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\CollisionDetector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleIzquierda.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\PaddleIzquierda.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleDerecha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\PaddleDerecha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleDerecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PaddleDerecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PIntroComputoGrafico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PelotaSpawner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\PelotaSpawner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Figuras.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\Figuras.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PelotaSpawner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\PelotaSpawner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Cuadrado.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\Cuadrado.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:src\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Cuadrado.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\Cuadrado.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Figuras.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\Figuras.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Pelota.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF58189E-5B11-4742-B226-8CA43E59D120}|PIntroComputoGrafico.vcxproj|solutionrelative:include\\Pelota.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,18 +53,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 234,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 190,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PIntroComputoGrafico.cpp",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PIntroComputoGrafico.cpp",
               "RelativeDocumentMoniker": "src\\PIntroComputoGrafico.cpp",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PIntroComputoGrafico.cpp",
               "RelativeToolTip": "src\\PIntroComputoGrafico.cpp",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-25T17:07:22.374Z",
               "IsPinned": true,
@@ -96,156 +80,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Score.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp",
-              "RelativeDocumentMoniker": "src\\Score.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp",
-              "RelativeToolTip": "src\\Score.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-12T03:42:55.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PaddleDerecha.cpp",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleDerecha.cpp",
               "RelativeDocumentMoniker": "src\\PaddleDerecha.cpp",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleDerecha.cpp",
               "RelativeToolTip": "src\\PaddleDerecha.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-12T03:23:32.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CollisionDetector.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\CollisionDetector.cpp",
-              "RelativeDocumentMoniker": "src\\CollisionDetector.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\CollisionDetector.cpp",
-              "RelativeToolTip": "src\\CollisionDetector.cpp",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAHsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-12T03:17:39.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pelota.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Pelota.cpp",
-              "RelativeDocumentMoniker": "src\\Pelota.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Pelota.cpp",
-              "RelativeToolTip": "src\\Pelota.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAD0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-15T17:06:58.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "PaddleIzquierda.cpp",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleIzquierda.cpp",
               "RelativeDocumentMoniker": "src\\PaddleIzquierda.cpp",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PaddleIzquierda.cpp",
               "RelativeToolTip": "src\\PaddleIzquierda.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-12T02:06:31.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cuadrado.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Cuadrado.cpp",
-              "RelativeDocumentMoniker": "src\\Cuadrado.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Cuadrado.cpp",
-              "RelativeToolTip": "src\\Cuadrado.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Pelota.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Pelota.cpp",
+              "RelativeDocumentMoniker": "src\\Pelota.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Pelota.cpp",
+              "RelativeToolTip": "src\\Pelota.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-12T01:56:52.355Z",
+              "WhenOpened": "2025-08-15T17:06:58.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "PelotaSpawner.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PelotaSpawner.cpp",
+              "RelativeDocumentMoniker": "src\\PelotaSpawner.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\PelotaSpawner.cpp",
+              "RelativeToolTip": "src\\PelotaSpawner.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-12T17:03:05.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Figuras.cpp",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Figuras.cpp",
               "RelativeDocumentMoniker": "src\\Figuras.cpp",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Figuras.cpp",
               "RelativeToolTip": "src\\Figuras.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-12T01:57:21.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Score.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp",
+              "RelativeDocumentMoniker": "src\\Score.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\src\\Score.cpp",
+              "RelativeToolTip": "src\\Score.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-12T17:16:32.635Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 166,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 210,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Score.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Score.h",
-              "RelativeDocumentMoniker": "include\\Score.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Score.h",
-              "RelativeToolTip": "include\\Score.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-12T03:42:49.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GameObject.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\GameObject.h",
-              "RelativeDocumentMoniker": "include\\GameObject.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\GameObject.h",
-              "RelativeToolTip": "include\\GameObject.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-12T01:59:47.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "PelotaSpawner.h",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PelotaSpawner.h",
+              "RelativeDocumentMoniker": "include\\PelotaSpawner.h",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PelotaSpawner.h",
+              "RelativeToolTip": "include\\PelotaSpawner.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-12T17:03:01.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PaddleDerecha.h",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleDerecha.h",
               "RelativeDocumentMoniker": "include\\PaddleDerecha.h",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleDerecha.h",
               "RelativeToolTip": "include\\PaddleDerecha.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-12T03:23:34.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "PaddleIzquierda.h",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleIzquierda.h",
               "RelativeDocumentMoniker": "include\\PaddleIzquierda.h",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\PaddleIzquierda.h",
               "RelativeToolTip": "include\\PaddleIzquierda.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-12T02:07:56.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Pelota.h",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Pelota.h",
               "RelativeDocumentMoniker": "include\\Pelota.h",
@@ -254,32 +212,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-15T17:06:45.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Cuadrado.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Cuadrado.h",
-              "RelativeDocumentMoniker": "include\\Cuadrado.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Cuadrado.h",
-              "RelativeToolTip": "include\\Cuadrado.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-12T01:56:47.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Figuras.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Figuras.h",
-              "RelativeDocumentMoniker": "include\\Figuras.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Introducci\u00F3n a Computo Gr\u00E1fico\\PIntroComputoGrafico\\include\\Figuras.h",
-              "RelativeToolTip": "include\\Figuras.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-12T01:57:18.576Z",
               "EditorCaption": ""
             }
           ]

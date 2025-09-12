@@ -55,7 +55,6 @@ void Pelota::Move()
 	position.x += velocity.x * GetFrameTime();
 	position.y += velocity.y * GetFrameTime();
 	miFigura->TranslateTo(position);
-	std::cout << "Pelota pos: " << position.x << ", " << position.y << std::endl;
 	if (position.y > GetScreenHeight() || position.x > GetScreenWidth()
 		|| position.y < 0 || position.x < 0) {
 		SetActive(false);
